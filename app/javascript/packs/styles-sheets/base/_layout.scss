@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .application {
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 100%;
+    .app-shell {
+      height: 100%;
+      & > div {
+        height: 100%;
+      }
+      .global-wrapper {
+        background-color: #f4f4f4;
+        min-height: 100%;
+        margin-bottom: -48px;
+        main {
+          display:block;
+          padding-bottom: 70px;
+        }
+      }
+    }
+  }
