@@ -16,6 +16,9 @@ const styles = {
     flex: {
       flexGrow: 1,
     },
+    loginText:{
+        fontSize: 14
+    }
   };
 
 class Header extends React.Component {
@@ -34,8 +37,8 @@ class Header extends React.Component {
                              { /* <IconButton color="inherit" aria-label="Open drawer">
                                 <MenuIcon />
                             </IconButton> */}
-                            <Typography variant="title" color="inherit" className={classes.flex}> Spot Service </Typography>
-                            <AccountCircle  />
+                            <Typography variant="title" color="inherit" className={classes.flex}> DriveAid </Typography>
+                            <Typography variant="title" color="inherit" className={classes.loginText}> LOG IN </Typography>
                         </Toolbar>
                     </AppBar>
                 </div>

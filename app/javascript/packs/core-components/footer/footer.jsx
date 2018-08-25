@@ -14,7 +14,7 @@ export const Footer = () =>
                     Copyright
                     ©
                     2018
-                    Spot Service.
+                    DriveAid.
                     All rights reserved. 
                 </Typography>
             </Toolbar>
