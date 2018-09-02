@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get 'login', to: 'login#index'
 
   get 'register', to: 'register#index'
+
+  get 'register/register_customer' => 'register#register_customer'
 end

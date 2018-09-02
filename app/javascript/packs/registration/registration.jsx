@@ -10,6 +10,9 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Main from '../core-components/main/main';
 import Header from '../core-components/header/header';
 import {Footer} from '../core-components/footer/footer';
+import RegisterForm from './components/register_form';
+
+import CustomerRegistration from './customer_registration';
 
 import style from '../styles-sheets/index.scss';
 
@@ -25,7 +28,7 @@ export default class Registration extends React.Component {
                             <Header />
                         </div>
                         <Main> 
-                            <div> Register </div>
+                            <CustomerRegistration />
                         </Main>
                     </div>
                     <Footer /> 

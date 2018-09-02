@@ -1,8 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import TextField from '@material-ui/core/TextField';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
@@ -53,6 +51,12 @@ class Login extends React.Component {
 
     handleShowPassword = () => {
         this.setState({showPassword: !this.state.showPassword})
+    }
+
+    handleOnClickRegister = () => {
+        const length=history.length;
+        history.go(-length);
+        window.location.replace("/register");
     }
 
     render() {
@@ -113,8 +117,8 @@ class Login extends React.Component {
                             <Typography variant="headline" component="h3">
                                 New to Spot Service ?
                             </Typography>
-                            <Button variant="contained" color="primary" className={classes.registerButton}>
-                                <HowToReg className={classes.HowToRegIcon} /> Register
+                            <Button variant="contained" color="primary" className={classes.registerButton} onClick={this.handleOnClickRegister}>
+                                <HowToReg className={classes.HowToRegIcon}  /> Register
                             </Button>
                         </Grid>
                     </Grid>

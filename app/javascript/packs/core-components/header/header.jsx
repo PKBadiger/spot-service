@@ -26,6 +26,12 @@ class Header extends React.Component {
         super(props);
         
     }
+
+    handleOnClickLogin = () =>{
+        const length=history.length;
+        history.go(-length);
+        window.location.replace("/login");
+    }
     
     render() {
         const { classes } = this.props;
@@ -38,7 +44,7 @@ class Header extends React.Component {
                                 <MenuIcon />
                             </IconButton> */}
                             <Typography variant="title" color="inherit" className={classes.flex}> DriveAid </Typography>
-                            <Typography variant="title" color="inherit" className={classes.loginText}> LOG IN </Typography>
+                            <Typography variant="title" color="inherit" className={classes.loginText} onClick={this.handleOnClickLogin}> LOG IN </Typography>
                         </Toolbar>
                     </AppBar>
                 </div>
