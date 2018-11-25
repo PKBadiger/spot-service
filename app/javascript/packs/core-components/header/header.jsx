@@ -44,7 +44,7 @@ class Header extends React.Component {
                                 <MenuIcon />
                             </IconButton> */}
                             <Typography variant="title" color="inherit" className={classes.flex}> DriveAid </Typography>
-                            <Typography variant="title" color="inherit" className={classes.loginText} onClick={this.handleOnClickLogin}> LOG IN </Typography>
+                            <Typography variant="title" color="inherit" className={classes.loginText} onClick={this.handleOnClickLogin}> <span>Contact : 8884445444</span></Typography>
                         </Toolbar>
                     </AppBar>
                 </div>

@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 
   get 'login', to: 'login#index'
 
+  get 'terms_and_conditions', to: 'dashboard#index'
+
+  get 'about_us', to: 'dashboard#index'
+
   get 'register', to: 'register#index'
 
   get 'register/register_customer' => 'register#register_customer'

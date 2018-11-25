@@ -9,8 +9,11 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Main from '../core-components/main/main';
 import Header from '../core-components/header/header';
-import {Footer} from '../core-components/footer/footer';
+import {BrowserRouter} from 'react-router-dom';
+import Footer from '../core-components/footer/footer';
 import Carousel from './components/carousel';
+
+import RouteProvider from './router/route_provider';
 
 import style from '../styles-sheets/index.scss';
 
@@ -25,7 +28,7 @@ export default class Dashboard extends React.Component {
                             <Header />
                         </div>
                         <Main> 
-                            <Carousel />
+                            <RouteProvider />
                         </Main>
                     </div>
                     <Footer />
@@ -38,7 +41,9 @@ export default class Dashboard extends React.Component {
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Dashboard />,
+    <BrowserRouter>
+    <Dashboard />
+    </BrowserRouter>,
     document.getElementById('dashboard-container'),
   )
 })

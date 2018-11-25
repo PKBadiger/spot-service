@@ -9,7 +9,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Main from '../core-components/main/main';
 import Header from '../core-components/header/header';
-import {Footer} from '../core-components/footer/footer';
+import Footer from '../core-components/footer/footer';
 import LoginMain from './components/login';
 
 import style from '../styles-sheets/index.scss';
