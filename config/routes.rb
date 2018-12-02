@@ -9,6 +9,12 @@ Rails.application.routes.draw do
 
   get 'about_us', to: 'dashboard#index'
 
+  get 'faqs', to: 'dashboard#index'
+
+  get 'contact_us', to: 'dashboard#index'
+
+  get 'policies', to: 'dashboard#index'
+
   get 'register', to: 'register#index'
 
   get 'register/register_customer' => 'register#register_customer'

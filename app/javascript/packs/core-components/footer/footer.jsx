@@ -16,6 +16,18 @@ import Typography from '@material-ui/core/Typography';
         window.location.replace("/about_us");
     }
 
+    handleOnClickFaqs = () => {
+        window.location.replace("/faqs");
+    }
+
+    handleOnClickContactUs = () => {
+        window.location.replace("/contact_us");
+    }
+
+    handleOnClickPolicies = () => {
+        window.location.replace("/policies");
+    }
+
     render() {
         return (
             <footer id="app-footer" className="footer">
@@ -30,11 +42,20 @@ import Typography from '@material-ui/core/Typography';
                         </Typography>
 
                         
-                        <Typography variant="body2" color="inherit" style={{marginLeft:'63%'}}> 
+                        <Typography variant="body2" color="inherit" style={{marginLeft:'48%', cursor: 'pointer'}}> 
                             <span onClick={this.handleOnClickTermsAndConditions} > Terms And Conditions</span>
                         </Typography>
-                        <Typography variant="body2" color="inherit" style={{marginLeft:'1%'}} > 
+                        <Typography variant="body2" color="inherit" style={{marginLeft:'1%', cursor: 'pointer'}} > 
                             <span onClick={this.handleOnClickAboutUs} > About Us</span>
+                        </Typography>
+                        <Typography variant="body2" color="inherit" style={{marginLeft:'1%', cursor: 'pointer'}} > 
+                            <span onClick={this.handleOnClickPolicies} > Policies </span>
+                        </Typography>
+                        <Typography variant="body2" color="inherit" style={{marginLeft:'1%', cursor: 'pointer'}} > 
+                            <span onClick={this.handleOnClickFaqs} > FAQs </span>
+                        </Typography>
+                        <Typography variant="body2" color="inherit" style={{marginLeft:'1%', cursor: 'pointer'}} > 
+                            <span onClick={this.handleOnClickContactUs} > Contact US </span>
                         </Typography>
                     </Toolbar>
                 </AppBar>
